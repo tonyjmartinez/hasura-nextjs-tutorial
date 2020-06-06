@@ -1,8 +1,10 @@
 import Router from "next/router";
+import config from "../../lib/auth0-config";
 
 import { Button } from "react-bootstrap";
 
 const Login = () => {
+  console.log("here.", config.AUTH0_DOMAIN);
   return (
     <div className="overlay">
       <div className="overlay-content">
