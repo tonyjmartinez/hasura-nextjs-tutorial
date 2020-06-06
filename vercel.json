@@ -2,7 +2,6 @@
   "build": {
     "env": {
       "DOMAIN": "hasura-nextjs-tutorial-4v9purpqz.now.sh",
-      "AUTH0_DOMAIN": "tonyjmartinez.auth0.com",
       "AUTH0_AUDIENCE": "hasura",
       "AUTH0_CLIENT_ID": "lXZJyuojuKE3QHuSaz0fq0buvlvxF4d3",
       "AUTH0_CLIENT_SECRET": "@auth0_client_secret",
