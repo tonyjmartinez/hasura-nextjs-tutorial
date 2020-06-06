@@ -1,4 +1,4 @@
-import Router from 'next/router'
+import Router from "next/router";
 
 import { Button } from "react-bootstrap";
 
@@ -7,7 +7,7 @@ const Login = () => {
     <div className="overlay">
       <div className="overlay-content">
         <div className="overlay-heading">
-          Welcome to the GraphQL tutorial app
+          Welcome to the GraphQL tutorial app!!!!
         </div>
         <div className="overlay-message">Please login to continue</div>
         <div className="overlay-action">
@@ -16,7 +16,7 @@ const Login = () => {
             variant="primary"
             className="btn-margin loginBtn"
             onClick={() => {
-              Router.push('/api/login');
+              Router.push("/api/login");
             }}
           >
             Log In
