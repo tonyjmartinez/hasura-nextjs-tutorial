@@ -18,6 +18,11 @@ const ADD_TODO = gql`
 `;
 
 const TodoInput = ({ isPublic = false }) => {
+  const [todoInput, setTodoInput] = useState("");
+  const resetInput = () => {
+    console.log("resetinput");
+    setTodoInput("");
+  };
   const updateCache = (cache, { data }) => {
     console.log("updateCache,", data);
     // If this is for the public feed, do nothing
@@ -40,11 +45,6 @@ const TodoInput = ({ isPublic = false }) => {
     update: updateCache,
     onCompleted: resetInput,
   });
-
-  const [todoInput, setTodoInput] = useState("");
-  const resetInput = () => {
-    setTodoInput("");
-  };
 
   return (
     <form
