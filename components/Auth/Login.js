@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 
 const Login = () => {
   console.log("here.", config.AUTH0_DOMAIN);
+  console.log("hmmm");
   return (
     <div className="overlay">
       <div className="overlay-content">
