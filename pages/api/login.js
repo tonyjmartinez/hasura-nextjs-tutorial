@@ -2,6 +2,7 @@ import auth0 from "../../lib/auth0";
 import config from "../../lib/auth0-config";
 
 export default async function login(req, res) {
+  console.log("login called");
   try {
     console.log("here...", config.AUTH0_DOMAIN);
     debugger;
